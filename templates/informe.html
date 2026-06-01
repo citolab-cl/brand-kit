@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citolab — Informe</title>
+
+  <!-- Fuentes de marca -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos de informe Citolab -->
+  <link rel="stylesheet" href="citolab-print.css" />
+</head>
+<body>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="doc-header">
+    <img src="../assets/logos/Logo-Citolab-2026_azul.png" alt="Citolab" />
+    <div class="meta">
+      <div><strong>Informe técnico</strong></div>
+      <div>Citolab · Laboratorio de Histopatología</div>
+      <div>Fecha: [DD-MM-AAAA]</div>
+    </div>
+  </header>
+
+  <!-- ============ TÍTULO ============ -->
+  <h1>Título del informe</h1>
+  <p style="color: var(--citolab-ink-muted); margin-top: -.3em;">
+    Subtítulo o resumen ejecutivo en una línea.
+  </p>
+
+  <!-- ============ KPIs ============ -->
+  <div class="kpi-row">
+    <div class="kpi"><div class="num">98,7%</div><div class="label">Concordancia diagnóstica</div></div>
+    <div class="kpi"><div class="num">1.240</div><div class="label">Casos procesados</div></div>
+    <div class="kpi"><div class="num">2,4 d</div><div class="label">Tiempo medio de respuesta</div></div>
+  </div>
+
+  <!-- ============ SECCIÓN ============ -->
+  <h2>1. Contexto</h2>
+  <p>
+    Texto del informe. El cuerpo usa <strong>Inter</strong>; los titulares,
+    <strong>Manrope</strong>. Los colores provienen de los tokens de marca, así
+    que cualquier documento queda consistente con la web y las presentaciones.
+  </p>
+
+  <div class="callout">
+    <strong>Nota:</strong> usa este bloque para destacar conclusiones o
+    advertencias. La variante <code>.callout--alert</code> lo marca en rojo.
+  </div>
+
+  <!-- ============ TABLA ============ -->
+  <h2>2. Resultados</h2>
+  <table>
+    <thead>
+      <tr><th>Indicador</th><th>Valor</th><th>Meta</th><th>Estado</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Ejemplo A</td><td>95%</td><td>90%</td><td>Cumple</td></tr>
+      <tr><td>Ejemplo B</td><td>88%</td><td>90%</td><td>En proceso</td></tr>
+      <tr><td>Ejemplo C</td><td>99%</td><td>95%</td><td>Cumple</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Conclusiones</h2>
+  <p>Cierre del informe.</p>
+
+  <!-- ============ PIE ============ -->
+  <footer class="doc-footer">
+    Citolab · www.citolab.cl · Documento de uso interno. Reemplaza este pie según corresponda.
+  </footer>
+
+</body>
+</html>

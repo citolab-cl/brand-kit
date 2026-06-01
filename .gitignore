@@ -1,0 +1,19 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Salidas generadas (PDFs/exportaciones temporales)
+*.pdf
+/out/
+/dist/
+
+# Editores
+.vscode/
+.idea/
+
+# Logos legacy sueltos en la raíz (referenciados por ruta absoluta desde otros
+# proyectos locales). La copia canónica del kit vive en assets/logos/.
+/Logo-Citolab-2026_azul.png
+/Logo-Citolab-2026_blanco.png
+/iso_azul.png
+/iso_blanco.png

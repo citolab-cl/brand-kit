@@ -1,0 +1,50 @@
+{
+  "name": "Citolab — Molecular Lens Design Tokens",
+  "version": "1.0.0",
+  "description": "Tokens de marca de Citolab. Fuente única de verdad para color, tipografía y forma.",
+  "color": {
+    "brand": {
+      "primary": { "value": "#2C4B7E", "use": "Azul marca histórico. Acento principal, titulares, botones." },
+      "primaryDeep": { "value": "#1E3A5F", "use": "Azul profundo. Hover, fondos oscuros, degradados." },
+      "tertiary": { "value": "#0891B2", "use": "Cian/teal. Acento secundario, datos." },
+      "tealDeep": { "value": "#0F766E", "use": "Teal profundo. Series de datos alternativas, estado OK." },
+      "accentSoft": { "value": "#6B89B8", "use": "Azul medio. Detalles suaves." },
+      "bluePale": { "value": "#DBEAFE", "use": "Azul muy claro. Fondos de realce." }
+    },
+    "text": {
+      "ink": { "value": "#1A2332", "use": "Texto principal." },
+      "inkMuted": { "value": "#5A6A7E", "use": "Texto atenuado / secundario." }
+    },
+    "surface": {
+      "base": { "value": "#F8FAFB", "use": "Fondo base de página." },
+      "card": { "value": "#FFFFFF", "use": "Tarjetas / contenedores." },
+      "low": { "value": "#F3F5F7", "use": "Sección alterna suave." },
+      "high": { "value": "#F0F3F5", "use": "Realce sutil." },
+      "higher": { "value": "#E8ECEF", "use": "Bordes de bloque." }
+    },
+    "line": {
+      "outline": { "value": "#C8D0D4", "use": "Bordes, divisores." }
+    },
+    "state": {
+      "error": { "value": "#DC2626", "use": "Error / alerta crítica." },
+      "success": { "value": "#0F766E", "use": "OK / positivo." }
+    },
+    "gradient": {
+      "brand": { "value": "linear-gradient(135deg, #2C4B7E 0%, #0891B2 100%)", "use": "Degradado de marca azul→cian. Títulos hero, portadas." }
+    }
+  },
+  "typography": {
+    "heading": { "family": "Manrope", "weights": [600, 700, 800], "tracking": "-0.04em", "use": "Titulares." },
+    "body": { "family": "Inter", "weights": [400, 500, 600], "tracking": "0", "use": "Cuerpo de texto." },
+    "mono": { "family": "Geist Mono", "use": "Código, datos tabulares." }
+  },
+  "shape": {
+    "radius": { "value": "12px", "use": "Radio base de esquinas." },
+    "radiusSm": { "value": "7px" },
+    "radiusLg": { "value": "22px" }
+  },
+  "effect": {
+    "glow": { "value": "0 0 30px rgba(44,75,126,0.2)", "use": "Resplandor azul de marca en hover." },
+    "shadowCard": { "value": "0 1px 3px rgba(26,35,50,0.06), 0 8px 24px rgba(26,35,50,0.06)", "use": "Sombra de tarjeta." }
+  }
+}

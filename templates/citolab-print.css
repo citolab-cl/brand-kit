@@ -1,0 +1,133 @@
+/* ============================================================
+   Citolab — Estilos de informe / PDF
+   Optimizado para exportar a PDF (Chrome headless o diálogo de
+   impresión del navegador). Importa los tokens de marca.
+   ============================================================ */
+
+@import url("../tokens/citolab-tokens.css");
+
+/* Página A4 con márgenes y pie con número de página */
+@page {
+  size: A4;
+  margin: 22mm 18mm 20mm 18mm;
+  @bottom-right {
+    content: "Página " counter(page) " de " counter(pages);
+    font-family: "Inter", sans-serif;
+    font-size: 8pt;
+    color: #5a6a7e;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--citolab-font-body);
+  color: var(--citolab-ink);
+  background: var(--citolab-surface-card);
+  font-size: 10.5pt;
+  line-height: 1.55;
+  margin: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* --- Encabezado de documento --- */
+.doc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--citolab-primary);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+}
+.doc-header img { height: 38px; }
+.doc-header .meta {
+  text-align: right;
+  font-size: 8.5pt;
+  color: var(--citolab-ink-muted);
+  line-height: 1.4;
+}
+
+/* --- Títulos --- */
+h1, h2, h3 {
+  font-family: var(--citolab-font-heading);
+  color: var(--citolab-ink);
+  letter-spacing: var(--citolab-tracking-snug);
+  font-weight: 700;
+  margin: 0 0 .4em;
+}
+h1 { font-size: 22pt; letter-spacing: var(--citolab-tracking-tight); }
+h2 {
+  font-size: 14pt;
+  color: var(--citolab-primary);
+  margin-top: 1.6em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--citolab-outline);
+}
+h3 { font-size: 11.5pt; color: var(--citolab-primary-deep); margin-top: 1.2em; }
+
+p { margin: 0 0 .8em; }
+a { color: var(--citolab-primary); }
+strong { color: var(--citolab-primary-deep); }
+
+/* --- Tablas --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 9.5pt;
+}
+th {
+  background: var(--citolab-primary);
+  color: #fff;
+  text-align: left;
+  padding: 8px 10px;
+  font-family: var(--citolab-font-heading);
+  font-weight: 600;
+}
+td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--citolab-outline);
+}
+tr:nth-child(even) td { background: var(--citolab-surface-low); }
+
+/* --- Callout / nota destacada --- */
+.callout {
+  background: var(--citolab-surface-high);
+  border-left: 4px solid var(--citolab-tertiary);
+  border-radius: var(--citolab-radius-sm);
+  padding: 12px 16px;
+  margin: 1.2em 0;
+}
+.callout--alert { border-left-color: var(--citolab-error); }
+
+/* --- KPI / cifras --- */
+.kpi-row { display: flex; gap: 14px; margin: 1.2em 0; }
+.kpi {
+  flex: 1;
+  background: var(--citolab-surface-low);
+  border: 1px solid var(--citolab-outline);
+  border-radius: var(--citolab-radius);
+  padding: 14px 16px;
+}
+.kpi .num {
+  font-family: var(--citolab-font-heading);
+  font-size: 20pt;
+  font-weight: 800;
+  color: var(--citolab-primary);
+  letter-spacing: var(--citolab-tracking-tight);
+}
+.kpi .label { font-size: 8.5pt; color: var(--citolab-ink-muted); }
+
+/* --- Pie de documento --- */
+.doc-footer {
+  margin-top: 36px;
+  padding-top: 10px;
+  border-top: 1px solid var(--citolab-outline);
+  font-size: 8pt;
+  color: var(--citolab-ink-muted);
+}
+
+/* Evita cortes feos al imprimir */
+h2, h3 { break-after: avoid; }
+table, .callout, .kpi-row { break-inside: avoid; }

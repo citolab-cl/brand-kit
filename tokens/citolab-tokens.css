@@ -1,0 +1,54 @@
+/* ============================================================
+   Citolab — Sistema de diseño "Molecular Lens"
+   Tokens de color, tipografía y forma. Fuente única de verdad.
+   Importar este archivo en cualquier informe, slide o página web.
+   Sincronizado con la landing (src/app/globals.css).
+   ============================================================ */
+
+:root {
+  /* --- Marca / primarios --- */
+  --citolab-primary: #2c4b7e;            /* Azul marca histórico — acento principal */
+  --citolab-primary-deep: #1e3a5f;       /* Azul profundo — hover, fondos oscuros */
+  --citolab-tertiary: #0891b2;           /* Cian/teal — acento secundario */
+  --citolab-teal-deep: #0f766e;          /* Teal profundo — datos/gráficos alt. */
+  --citolab-accent-soft: #6b89b8;        /* Azul medio — detalles suaves */
+  --citolab-blue-pale: #dbeafe;          /* Azul muy claro — fondos de realce */
+
+  /* --- Texto --- */
+  --citolab-ink: #1a2332;                /* Texto principal */
+  --citolab-ink-muted: #5a6a7e;          /* Texto atenuado / secundario */
+
+  /* --- Superficies (de más clara a más densa) --- */
+  --citolab-surface: #f8fafb;            /* Fondo base de página */
+  --citolab-surface-card: #ffffff;       /* Tarjetas / contenedores */
+  --citolab-surface-low: #f3f5f7;        /* Sección alterna suave */
+  --citolab-surface-high: #f0f3f5;       /* Realce sutil */
+  --citolab-surface-higher: #e8ecef;     /* Bordes de bloque */
+
+  /* --- Línea / borde --- */
+  --citolab-outline: #c8d0d4;            /* Bordes, divisores */
+  --citolab-outline-soft: rgba(0, 0, 0, 0.08);
+
+  /* --- Estado --- */
+  --citolab-error: #dc2626;              /* Error / alerta crítica */
+  --citolab-success: #0f766e;            /* OK / positivo (usa teal de marca) */
+
+  /* --- Gradiente de marca (azul → cian) --- */
+  --citolab-gradient: linear-gradient(135deg, #2c4b7e 0%, #0891b2 100%);
+
+  /* --- Tipografía --- */
+  --citolab-font-heading: "Manrope", system-ui, sans-serif;
+  --citolab-font-body: "Inter", system-ui, sans-serif;
+  --citolab-font-mono: "Geist Mono", ui-monospace, monospace;
+  --citolab-tracking-tight: -0.04em;     /* Titulares grandes */
+  --citolab-tracking-snug: -0.02em;      /* Subtítulos */
+
+  /* --- Forma --- */
+  --citolab-radius: 0.75rem;             /* 12px — radio base */
+  --citolab-radius-sm: 0.45rem;
+  --citolab-radius-lg: 1.35rem;
+
+  /* --- Sombra / efecto de marca --- */
+  --citolab-glow: 0 0 30px rgba(44, 75, 126, 0.2);
+  --citolab-shadow-card: 0 1px 3px rgba(26, 35, 50, 0.06), 0 8px 24px rgba(26, 35, 50, 0.06);
+}

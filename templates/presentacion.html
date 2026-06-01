@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citolab — Presentación</title>
+
+  <!-- Fuentes de marca -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- reveal.js (motor de slides) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+
+  <!-- Tokens de marca -->
+  <link rel="stylesheet" href="../tokens/citolab-tokens.css" />
+
+  <!-- Tema Citolab sobre reveal.js -->
+  <style>
+    :root { --r-main-font: var(--citolab-font-body); --r-heading-font: var(--citolab-font-heading); }
+    .reveal {
+      font-family: var(--citolab-font-body);
+      color: var(--citolab-ink);
+      font-size: 30px;
+    }
+    .reveal .slides { text-align: left; }
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: var(--citolab-font-heading);
+      color: var(--citolab-ink);
+      letter-spacing: var(--citolab-tracking-tight);
+      font-weight: 800;
+      text-transform: none;
+    }
+    .reveal h1 { font-size: 2.4em; line-height: 1.05; }
+    .reveal h2 { font-size: 1.5em; color: var(--citolab-primary); }
+    .reveal strong { color: var(--citolab-primary); }
+    .reveal a { color: var(--citolab-tertiary); }
+    .reveal section { background: var(--citolab-surface); }
+
+    /* Fondo general de la deck */
+    .reveal-viewport { background: var(--citolab-surface); }
+
+    /* Portada con degradado de marca */
+    section.cover { background: var(--citolab-gradient) !important; color: #fff; }
+    section.cover h1, section.cover h2 { color: #fff; }
+    section.cover .logo { height: 56px; margin-bottom: 1em; }
+    section.cover .kicker {
+      font-family: var(--citolab-font-heading);
+      letter-spacing: .18em; text-transform: uppercase;
+      font-size: .5em; opacity: .85;
+    }
+
+    /* Título de marca con degradado (en slides claros) */
+    .brand-gradient {
+      background: var(--citolab-gradient);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+
+    /* Barra de acento bajo los títulos */
+    .reveal h2.accent { padding-bottom: .25em; border-bottom: 3px solid var(--citolab-tertiary); display: inline-block; }
+
+    /* Bullets */
+    .reveal ul { margin-left: 1em; }
+    .reveal li { margin: .35em 0; }
+    .reveal li::marker { color: var(--citolab-tertiary); }
+
+    /* Tarjetas KPI */
+    .kpis { display: flex; gap: 24px; margin-top: .6em; }
+    .kpis .kpi { flex: 1; background: var(--citolab-surface-card); border: 1px solid var(--citolab-outline); border-radius: var(--citolab-radius); padding: 24px; }
+    .kpis .num { font-family: var(--citolab-font-heading); font-weight: 800; font-size: 1.8em; color: var(--citolab-primary); letter-spacing: var(--citolab-tracking-tight); }
+    .kpis .label { font-size: .5em; color: var(--citolab-ink-muted); }
+
+    /* Pie con logo iso */
+    .reveal .slide-number { background: transparent; color: var(--citolab-ink-muted); }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ===== PORTADA ===== -->
+      <section class="cover" data-background-color="#2c4b7e">
+        <img class="logo" src="../assets/logos/Logo-Citolab-2026_blanco.png" alt="Citolab" />
+        <div class="kicker">Laboratorio de Histopatología</div>
+        <h1>Título de la presentación</h1>
+        <h2 style="font-weight:600;opacity:.9;">Subtítulo · Expositor · Fecha</h2>
+      </section>
+
+      <!-- ===== AGENDA ===== -->
+      <section>
+        <h2 class="accent">Agenda</h2>
+        <ul>
+          <li>Punto uno</li>
+          <li>Punto dos</li>
+          <li>Punto tres</li>
+        </ul>
+      </section>
+
+      <!-- ===== CONTENIDO ===== -->
+      <section>
+        <h2 class="accent">Sección de contenido</h2>
+        <p>Cuerpo en <strong>Inter</strong>, titulares en <strong>Manrope</strong>.
+           Todo hereda los colores de marca desde los tokens.</p>
+      </section>
+
+      <!-- ===== KPIs ===== -->
+      <section>
+        <h2 class="accent">Cifras clave</h2>
+        <div class="kpis">
+          <div class="kpi"><div class="num">98,7%</div><div class="label">Concordancia</div></div>
+          <div class="kpi"><div class="num">1.240</div><div class="label">Casos</div></div>
+          <div class="kpi"><div class="num">2,4 d</div><div class="label">Respuesta</div></div>
+        </div>
+      </section>
+
+      <!-- ===== TÍTULO DESTACADO ===== -->
+      <section>
+        <h1 class="brand-gradient">Frase de impacto<br />con degradado de marca</h1>
+      </section>
+
+      <!-- ===== CIERRE ===== -->
+      <section class="cover" data-background-color="#1e3a5f">
+        <img class="logo" src="../assets/logos/iso_blanco.png" alt="Citolab" style="height:64px;" />
+        <h1>Gracias</h1>
+        <h2 style="font-weight:600;opacity:.9;">contacto@citolab.cl · www.citolab.cl</h2>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: "c/t",
+      transition: "slide",
+      width: 1280,
+      height: 720,
+      margin: 0.08,
+    });
+  </script>
+</body>
+</html>
