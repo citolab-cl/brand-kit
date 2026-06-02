@@ -25,7 +25,7 @@ Branding/
 Cada miembro instala el kit como skill clonándolo en su carpeta de skills:
 
 ```bash
-git clone <URL-del-repo> ~/.claude/skills/citolab-brand
+git clone https://github.com/citolab-cl/brand-kit.git ~/.claude/skills/citolab-brand
 ```
 
 Luego, en cualquier sesión de Claude Code, basta pedir *"hazme un informe / una
